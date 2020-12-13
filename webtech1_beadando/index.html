@@ -1,0 +1,180 @@
+<!Doctype html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Cars website</title>
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <script type="application/javascript" src="js/jQuery 3.5.1.js"></script>
+    <script type="application/javascript" src="js/index.js"></script>
+</head>
+
+<body>
+
+<div id="banner">
+    <p onclick="toHome()" class="home">Garage Store</p>
+</div>
+
+<div class="menubar">
+    <a href="#" onclick="addCar()" class="menuButton">Add car</a>
+    <a href="#" onclick="listCars()" class="menuButton">List cars</a>
+    <a href="#" onclick="addManufacturer()" class="menuButton">Add manufacturer</a>
+    <a href="#" onclick="listManufacturers()" class="menuButton">List manufacturers</a>
+</div>
+
+
+<div id="description">
+    <p>Hello Visitor!</p>
+    <p>This supposed to be an introductional text.</p>
+    <p>Feel free to mess around.</p>
+</div>
+
+<table>
+    <tr>
+        <img src="images/carbck.jpg" class="contentImage">
+    </tr>
+</table>
+<div id="listCar">
+    <!--cars table-->
+</div>
+
+<div id="listManufacturers">
+    <!--manufacturer table-->
+</div>
+
+<div id="addCar">
+    <div id="carcontent">
+        <form action="addCar" method="post" id="addCarForm">
+            <table>
+                <tr>
+                    <td>Car name:</td>
+                    <td><input id="addCarName" type="text" name="name"></td>
+                </tr>
+                <tr>
+                    <td>Consumption (l/100km):</td>
+                    <td><input id="addConsumption" type="text" name="consumption"></td>
+                </tr>
+                <tr>
+                    <td>Car color:</td>
+                    <td><input id="addColor" type="text" name="color"></td>
+                </tr>
+                <tr>
+                    <td>Manufacturer of the car:</td>
+                    <td>
+                        <select name="manufacturer" id="dropdown">
+
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Numbers available:</td>
+                    <td><input id="addAvailable" type="text" name="avaiable"></td>
+                </tr>
+                <tr>
+                    <td>Year:</td>
+                    <td><input id="addYear" type="text" name="year"></td>
+                </tr>
+                <tr>
+                    <td>Horsepower:</td>
+                    <td><input id="addHorsepower" type="text" name="horsepower"></td>
+                </tr>
+            </table>
+            <input id="submit" type="submit" value="Add car">
+        </form>
+    </div>
+</div>
+
+<div id="modCar">
+    <div id="carmodcontent">
+        <form action="modCar" method="post" id="modCarForm">
+            <table>
+                <tr>
+                    <td>ID:</td>
+                    <td><input id="modCarID" type="text" name="_id" readonly></td>
+                </tr>
+                <tr>
+                    <td>Car name:</td>
+                    <td><input id="modCarName" type="text" name="name"></td>
+                </tr>
+                <tr>
+                    <td>Consumption (l/100km):</td>
+                    <td><input id="modConsumption" type="text" name="consumption"></td>
+                </tr>
+                <tr>
+                    <td>Car color:</td>
+                    <td><input id="modColor" type="text" name="color"></td>
+                </tr>
+                <tr>
+                    <td>Manufacturer of the car:</td>
+                    <td>
+                        <select name="manufacturer" id="moddropdown">
+
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Numbers available:</td>
+                    <td><input id="modAvailable" type="text" name="avaiable"></td>
+                </tr>
+                <tr>
+                    <td>Year:</td>
+                    <td><input id="modYear" type="text" name="year"></td>
+                </tr>
+                <tr>
+                    <td>Horsepower:</td>
+                    <td><input id="modHorsepower" type="text" name="horsepower"></td>
+                </tr>
+            </table>
+            <input id="modify" type="submit" value="Modify car">
+        </form>
+    </div>
+</div>
+
+<div id="addManufacturer">
+    <div id="manucontent">
+        <form action="addManufacturer" method="post" id="addManufacturerForm">
+            <table>
+                <tr>
+                    <td>Manufacturer name:</td>
+                    <td><input id="addName" type="text" name="name"></td>
+                </tr>
+                <tr>
+                    <td>Country:</td>
+                    <td><input id="addCountry" type="text" name="country"></td>
+                </tr>
+                <tr>
+                    <td>Founded in:</td>
+                    <td><input id="addFounded" type="text" name="founded"></td>
+                </tr>
+            </table>
+            <input id="submit" type="submit" value="Add Manufacturer">
+        </form>
+    </div>
+</div>
+
+<div id="modManufacturer">
+    <div id="manufmodcontent">
+        <form action="modManufacturer" method="post" id="modManufacturerForm">
+            <table>
+                <tr>
+                    <td>ID:</td>
+                    <td><input id="modId" type="text" name="_id" readonly></td>
+                </tr>
+                <tr>
+                    <td>Manufacturer name:</td>
+                    <td><input id="modName" type="text" name="name"></td>
+                </tr>
+                <tr>
+                    <td>Country:</td>
+                    <td><input id="modCountry" type="text" name="country"></td>
+                </tr>
+                <tr>
+                    <td>Founded in:</td>
+                    <td><input id="modFounded" type="text" name="founded"></td>
+                </tr>
+            </table>
+            <input id="modify" type="submit" value="Modify manufacturer">
+        </form>
+    </div>
+</div>
+
+</body>

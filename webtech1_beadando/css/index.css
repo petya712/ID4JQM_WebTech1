@@ -1,0 +1,145 @@
+body {
+    background-color: white;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.home {
+    text-align: center;
+}
+
+#banner {
+    border-style: solid;
+    border-width: 5px;
+    border-color: #D35318; /*red*/
+    background-color: #18D0D3; /*light blue*/
+    color: black;
+    font-size: 64px;
+    padding: 30px;
+    font-family: "Arial Narrow";
+    font-weight: bold;
+    border-radius: 60px 60px 0px 0px;
+}
+
+
+.menubar {
+    background-color: #18D0D3; /*light blue*/
+    padding-top: 30px;
+}
+
+.menubar .menuButton {
+     color: black;
+     font-size: 30px;
+     text-align: center;
+     padding: 6px 140px;
+     text-decoration: none;
+     border-radius: 6px 6px 5px 5px;
+ }
+
+
+
+.menubar .menuButton:hover {
+     background-color: #D35318; /*red*/
+     color: black;
+     font-weight: bold;
+     transition-duration: 0s;
+ }
+
+.menubar .menuButton.active {
+     background-color: #89D318; /*green*/
+     transition-duration: 0.5s;
+ }
+
+
+.contentImage {
+    width: 100%;
+    height: 100%;
+    display: block;
+    margin-left: center;
+    margin-right: auto;
+}
+
+
+#description {
+    text-align: center;
+    font-size: xx-large;
+    font-weight: bold;
+    font-family: "Arial Narrow";
+    border: 10px solid red;
+    margin-left: center;
+}
+
+p {
+    line-height: 15px; /* within paragraph */
+    margin-bottom: 25px; /* between paragraphs */
+}
+
+#listTableCar, #listTableManufacturer {
+    border: 3px solid red;
+    margin-top: 2%;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.listth {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    border: 1px solid black;
+}
+
+.listtd {
+    font-size: 15px;
+    text-align: center;
+    border: 1px solid black;
+}
+
+#listCar, #listManufacturers, #addCar, #addManufacturer, #modCar, #modManufacturer{
+    display: none;
+    margin-left: center;
+}
+
+#content {
+    margin: 2% 2% 2% 10%;
+    font-size: 30px;
+}
+
+#submit, #modify {
+    width: auto;
+    height: auto;
+    font-size: large;
+    background-color: red;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 5px;
+    float: right;
+}
+
+#textField {
+    width: 250px;
+    height: 30px;
+    margin-left: 10px;
+    box-sizing: border-box;
+    border: 2px solid red;
+    border-radius: 4px;
+    padding-left: 10px;
+    font-size: medium;
+}
+
+#dropdown, #moddropdown {
+    width: 250px;
+    height: 30px;
+    box-sizing: border-box;
+    border: 1px solid black;
+    border-radius: 4px;
+    padding-left: 10px;
+    font-size: medium;
+}
+
